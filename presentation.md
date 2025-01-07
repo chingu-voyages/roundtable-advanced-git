@@ -1,0 +1,85 @@
+# Git configuration
+
+- To setup git properly use `git config`
+- You can always edit the `~/.gitconfig` file for global configuration
+- Edit the `.git/config` file for a per repository configuration
+- Use the `--global` for setting up global configuration
+- Use the `--local` for setting up local configuration
+
+- To initialize a git repository
+
+```bash
+git init
+```
+
+# Git config options
+
+- Every command we use can change either the local or the global configuration depending on the flag
+
+- To view the current global configuration:
+
+```bash
+git config --global --list
+```
+
+- To view the current local configuration
+
+```bash
+git config --local --list
+```
+
+# Set configuration
+
+- To set configuration
+
+```bash
+git config --global --set alias.l1 "log --oneline -n 10"
+```
+
+- With this set we can run `git l1` as if we were running `git log --oneline -n 10`
+
+- You can add this either in the `~/.gitconfig` or in the `./.git/config` files depending if you want to do it globally or not
+
+# Pagination
+
+- Git uses under the hood `less` to show its results, that makes that it paginates them, however you can disable
+
+- Per command, **always goes between the git and the command**
+
+```bash
+git --no-pager log
+```
+
+- You can disable it by changing its default pager
+
+```bash
+git config --global --set core.pager cat
+```
+
+# Adding chunks to the staging area
+
+```bash
+git add -p
+```
+
+# Rephrasing your commit
+
+- To rephrase your last commit
+
+```bash
+git commit --amend
+```
+
+- **_WARNING_** **Do not amend your commit once pushed**
+
+# Adding info to the commit
+
+```bash
+git commit --trailer "Signed-off-by:C O Mitter \ <committer@example.com>" --trailer "Helped-by:C O Mitter \ <committer@example.com>"
+```
+
+# Adding a commit without any files
+
+```bash
+git commit --allow-empty -m "Initial commit"
+```
