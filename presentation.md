@@ -102,3 +102,9 @@ echo "gitdir: ./.bare" > .git
 
 This will clone the repo into the `.bare` directory and tell git that its configuration files are located inside the `.bare`
 directory
+
+# Resources
+
+- [Git worktrees](https://morgan.cugerone.com/blog/how-to-use-git-worktree-and-in-a-clean-way/)
+- [Git website](https://git-scm.com/docs)
+- [Boot.dev git course](https://www.boot.dev/lessons/65e6780d-fdde-447a-9898-b30b73793a3a)
