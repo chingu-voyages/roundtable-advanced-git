@@ -1,7 +1,7 @@
 /**
  * In this project we will be discussing some advanced git techniques, the actual content of it
  * is not really important
- **/
+ */
 
 /**
  * Convert a temperature that is in Celcius to farenheit
@@ -19,6 +19,24 @@ function ConvertToFarenheit(temp) {
     return value
 }
 
+/**
+ * Convert a temperature that is in Farenheit to Celcius
+ *
+ * Formula used
+ * celcius = (farenheit - 32) * 5/9
+ *
+ * @param {number} temp 
+ * @returns {number}
+ */
+function ConverToCelcius(temp) {
+    var value = temp - 32
+    value = value * 5 / 9
+
+    return value
+}
+
 const far = ConvertToFarenheit(21)
+const cel = ConverToCelcius(far)
 
 console.log(far)
+console.log(cel)
