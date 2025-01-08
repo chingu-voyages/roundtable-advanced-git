@@ -4,16 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "node src/index.cjs"
   },
   "keywords": [
-      "chingu",
-      "roundtables",
-      "git",
-      "advanced",
-      "temperature"
+    "chingu",
+    "roundtables",
+    "git",
+    "advanced",
+    "temperature"
   ],
   "author": "Andres Court",
-  "license": "GNU"
+  "license": "GNU",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
