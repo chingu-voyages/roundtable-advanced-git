@@ -1,5 +1,5 @@
-const ConvertToFarenheit = require("./farenheit.js")
-const ConverToCelcius = require("./celcius.js")
+const ConvertToFarenheit = require("./farenheit.cjs")
+const ConverToCelcius = require("./celcius.cjs")
 
 const far = ConvertToFarenheit(21)
 const cel = ConverToCelcius(69.8)
