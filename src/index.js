@@ -1,26 +1,3 @@
-/**
- * In this project we will be discussing some advanced git techniques, the actual content of it
- * is not really important
- */
-
-/**
- * Convert a temperature that is in Celcius to farenheit
- *
- * Formula used
- * farenheit = 32 + (9/5 * celcius)
- *
- * @param {number} temp The temperature in celcius
- * @returns {number} The converted farenheit value
- *
- * @author Andres Court
- */
-function ConvertToFarenheit(temp) {
-    /** @type {number} */
-    let value = temp * 9 / 5;
-    value = value + 32
-
-    return value
-}
 
 /**
  * Convert a temperature that is in Farenheit to Celcius
@@ -40,6 +17,7 @@ function ConverToCelcius(temp) {
 
     return value
 }
+const ConvertToFarenheit = require("./farenheit.js")
 
 const far = ConvertToFarenheit(21)
 const cel = ConverToCelcius(far)
