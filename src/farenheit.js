@@ -11,10 +11,10 @@
  */
 function ConvertToFarenheit(temp) {
     /** @type {number} */
-    let value = temp * 9 / 5;
-    value = value + 32
+    let value = (temp * 9) / 5;
+    value = value + 32;
 
-    return value
+    return value;
 }
 
-module.exports = ConvertToFarenheit
+export default ConvertToFarenheit;

@@ -11,10 +11,10 @@
  */
 function ConverToCelcius(temp) {
     /** @type {number} */
-    var value = temp - 32
-    value = value * 5 / 9
+    var value = temp - 32;
+    value = (value * 5) / 9;
 
-    return value
+    return value;
 }
 
-module.exports = ConverToCelcius
+export default ConverToCelcius;
