@@ -13,7 +13,7 @@ import { CelciusFactor, TemperatureOffset } from "../constants.js";
  */
 function ConverToCelcius(temp) {
     /** @type {number} */
-    var value = temp - TemperatureOffset;
+    let value = temp - TemperatureOffset;
     value = value * CelciusFactor;
 
     return value;
