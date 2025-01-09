@@ -1,5 +1,5 @@
-const { it, describe, expect } = require("@jest/globals");
-const convertToFarenheit = require("../src/farenheit.cjs");
+import { it, describe, expect } from "@jest/globals";
+import convertToFarenheit from "../src/farenheit.js";
 
 describe("Convert to Celcius", () => {
     it("should convert 0°C to equal 32°F", () => {
