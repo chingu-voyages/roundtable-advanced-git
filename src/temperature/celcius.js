@@ -1,4 +1,4 @@
-import { CelciusFactor, TemperatureOffset } from "./constants";
+import { CelciusFactor, TemperatureOffset } from "../constants.js";
 
 /**
  * Convert a temperature that is in Farenheit to Celcius
