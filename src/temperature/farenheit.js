@@ -1,3 +1,5 @@
+import { FarenheitFactor, TemperatureOffset } from "../constants";
+
 /**
  * Convert a temperature that is in Celcius to farenheit
  *
@@ -11,8 +13,8 @@
  */
 function ConvertToFarenheit(temp) {
     /** @type {number} */
-    let value = (temp * 9) / 5;
-    value = value + 32;
+    let value = temp * FarenheitFactor;
+    value = value + TemperatureOffset;
 
     return value;
 }
