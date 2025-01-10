@@ -1,5 +1,5 @@
-import ConvertToFarenheit from "./farenheit.js";
-import ConverToCelcius from "./celcius.js";
+import ConvertToFarenheit from "./temperature/farenheit.js";
+import ConverToCelcius from "./temperature/celcius.js";
 
 const far = ConvertToFarenheit(21);
 const cel = ConverToCelcius(69.8);
