@@ -11,6 +11,6 @@ describe("Convert to Celcius", () => {
     it("should convert 21°C to 69.8°F", () => {
         const far = convertToFarenheit(21);
 
-        expect(far).toBe(69.8);
+        expect(far).toBeCloseTo(69.8);
     });
 });
