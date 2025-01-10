@@ -13,16 +13,8 @@ import { CelciusFactor, TemperatureOffset } from "../constants.js";
  */
 function ConverToCelcius(temp) {
     /** @type {number} */
-<<<<<<<< HEAD:src/temperature/celcius.js
-    var value = temp - TemperatureOffset;
+    let value = temp - TemperatureOffset;
     value = value * CelciusFactor;
-|||||||| parent of 1387bbc (chore: migrate from require to import):src/celcius.cjs
-    var value = temp - 32
-    value = value * 5 / 9
-========
-    var value = temp - 32;
-    value = (value * 5) / 9;
->>>>>>>> 1387bbc (chore: migrate from require to import):src/celcius.js
 
     return value;
 }

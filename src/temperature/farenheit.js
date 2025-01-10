@@ -13,16 +13,8 @@ import { FarenheitFactor, TemperatureOffset } from "../constants";
  */
 function ConvertToFarenheit(temp) {
     /** @type {number} */
-<<<<<<<< HEAD:src/temperature/farenheit.js
     let value = temp * FarenheitFactor;
     value = value + TemperatureOffset;
-|||||||| parent of 1387bbc (chore: migrate from require to import):src/farenheit.cjs
-    let value = temp * 9 / 5;
-    value = value + 32
-========
-    let value = (temp * 9) / 5;
-    value = value + 32;
->>>>>>>> 1387bbc (chore: migrate from require to import):src/farenheit.js
 
     return value;
 }
