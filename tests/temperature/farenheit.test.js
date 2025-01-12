@@ -1,5 +1,5 @@
 import { it, describe, expect } from "@jest/globals";
-import convertToFarenheit from "../src/temperature/farenheit.js";
+import convertToFarenheit from "../../src/temperature/farenheit.js";
 
 describe("Convert to Celcius", () => {
     it("should convert 0°C to equal 32°F", () => {
