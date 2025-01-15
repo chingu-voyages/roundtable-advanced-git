@@ -1,4 +1,4 @@
-import { DistanceFactor } from "../constants";
+import { DistanceFactor } from "../constants.js";
 
 /**
  * Converts a distance expressed in meters to feet
