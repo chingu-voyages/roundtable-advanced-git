@@ -108,3 +108,4 @@ directory
 - [Git worktrees](https://morgan.cugerone.com/blog/how-to-use-git-worktree-and-in-a-clean-way/)
 - [Git website](https://git-scm.com/docs)
 - [Boot.dev git course](https://www.boot.dev/lessons/65e6780d-fdde-447a-9898-b30b73793a3a)
+- [Dangit git](https://dangitgit.com/)
