@@ -82,6 +82,13 @@ To add an existing branch to the worktree
 ```bash
 git worktree add <the path to where the branch directory will be>
 ```
+
+To add a new branch to the worktree
+
+```bash
+git worktree add -b <name of the branch> <the path to where the branch directory will be>
+```
+
 # Adding chunks to the staging area
 
 ```bash
