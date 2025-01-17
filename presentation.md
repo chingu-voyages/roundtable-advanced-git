@@ -56,6 +56,25 @@ git --no-pager log
 git config --global --set core.pager cat
 ```
 
+# Git Worktrees
+
+You can clone a remote repository into a **Git Worktree** configuration by running
+
+```bash
+git clone --bare https://github.com/chingu-voyages/roundtable-advanced-git.git
+```
+
+That will display all the git files that you usually see inside of the `.git` directory, to add those to a hidden file we will need
+to execute:
+
+```bash
+git clone --bare https://github.com/chingu-voyages/roundtable-advanced-git.git .bare
+echo "gitdir: ./.bare" > .git
+```
+
+This will clone the repo into the `.bare` directory and tell git that its configuration files are located inside the `.bare`
+directory
+
 # Adding chunks to the staging area
 
 ```bash
@@ -83,25 +102,6 @@ git commit --trailer "Signed-off-by:C O Mitter \ <committer@example.com>" --trai
 ```bash
 git commit --allow-empty -m "Initial commit"
 ```
-
-# Git Worktrees
-
-You can clone a remote repository into a **Git Worktree** configuration by running
-
-```bash
-git clone --bare https://github.com/chingu-voyages/roundtable-advanced-git.git
-```
-
-That will display all the git files that you usually see inside of the `.git` directory, to add those to a hidden file we will need
-to execute:
-
-```bash
-git clone --bare https://github.com/chingu-voyages/roundtable-advanced-git.git .bare
-echo "gitdir: ./.bare" > .git
-```
-
-This will clone the repo into the `.bare` directory and tell git that its configuration files are located inside the `.bare`
-directory
 
 # Resources
 
