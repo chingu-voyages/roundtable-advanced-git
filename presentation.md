@@ -75,6 +75,13 @@ echo "gitdir: ./.bare" > .git
 This will clone the repo into the `.bare` directory and tell git that its configuration files are located inside the `.bare`
 directory
 
+# Adding a branch
+
+To add an existing branch to the worktree
+
+```bash
+git worktree add <the path to where the branch directory will be>
+```
 # Adding chunks to the staging area
 
 ```bash
