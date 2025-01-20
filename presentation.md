@@ -86,8 +86,62 @@ git commit --amend
 
 # Adding info to the commit
 
+When working with someone in a specific commit, you **should** give that person the credit he/she deserves, so for that
+
 ```bash
 git commit --trailer "Signed-off-by:C O Mitter \ <committer@example.com>" --trailer "Helped-by:C O Mitter \ <committer@example.com>"
+```
+
+# Finding a commit that created a bug
+
+Finding where a bug was introduced is alway tricky in a medium sized project, more so in a large project. To find we will take an
+overlook to the _git bisect_ command
+
+```bash
+man git-bisect
+tldr git-bisect
+```
+
+To start git bisect
+
+```bash
+git bisect start
+```
+
+Then we need to define the first good and bad commits.
+For telling bisect that the current commit is bad we run
+
+```bash
+git bisect bad
+git log --oneline
+```
+
+# Finding a commit that created a bug
+
+Then we need to tell which one is a good commit
+
+```bash
+git bisect good <commitish>
+```
+
+After that _git-bisect_ will give us a commit and we need to tell it if it is a good or a bad commit
+
+When there are no more commits to go to, _git-bisect_ will tell us which one is the commit which introduced a bug
+
+If you have atomic commits, then it will be very easy to find by analizing the commit, which line was the culprit for introducing that bug
+
+# Fixing the bug
+
+Once you've identified the bug there is a desision to make, how are we going to fix the bug. There are two main ways:
+
+1. Introducing a fix commit. This is recommended if the bug is in a common branch (eg. main, dev, etc).
+   You will create a new commit at the end of the tree where you fix the code
+
+2. Rebasing. **Only run this in a feature branch** we will take a look at git rebase, with this we will alter the git history and will be as the bug
+   never happened
+
+```bash
+git rebase -i <commitish>
 ```
 
 # Adding a commit without any files
