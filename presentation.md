@@ -56,6 +56,34 @@ git --no-pager log
 git config --global --set core.pager cat
 ```
 
+# Adding chunks to the staging area
+
+```bash
+git add -p
+```
+
+# Rephrasing your commit
+
+- To rephrase your last commit
+
+```bash
+git commit --amend
+```
+
+- **_WARNING_** **Do not amend your commit once pushed**
+
+# Adding info to the commit
+
+```bash
+git commit --trailer "Signed-off-by:C O Mitter \ <committer@example.com>" --trailer "Helped-by:C O Mitter \ <committer@example.com>"
+```
+
+# Adding a commit without any files
+
+```bash
+git commit --allow-empty -m "Initial commit"
+```
+
 # Git Worktrees
 
 You can clone a remote repository into a **Git Worktree** configuration by running
@@ -87,34 +115,6 @@ To add a new branch to the worktree
 
 ```bash
 git worktree add -b <name of the branch> <the path to where the branch directory will be>
-```
-
-# Adding chunks to the staging area
-
-```bash
-git add -p
-```
-
-# Rephrasing your commit
-
-- To rephrase your last commit
-
-```bash
-git commit --amend
-```
-
-- **_WARNING_** **Do not amend your commit once pushed**
-
-# Adding info to the commit
-
-```bash
-git commit --trailer "Signed-off-by:C O Mitter \ <committer@example.com>" --trailer "Helped-by:C O Mitter \ <committer@example.com>"
-```
-
-# Adding a commit without any files
-
-```bash
-git commit --allow-empty -m "Initial commit"
 ```
 
 # Resources
