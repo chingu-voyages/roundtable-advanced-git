@@ -58,6 +58,18 @@ git config --global --set core.pager cat
 
 # Adding chunks to the staging area
 
+I often find myself making a mini code review of my code every time that I've written, so for that I mainly use 2 commands:
+
+1. First we want to be able to see the changes that has been made in each file
+
+```bash
+git diff
+```
+
+**WARNING** This will not show information from files that aren't in the repo
+
+2. Then we want to be able to _select_ the information that we want to add to the staging area
+
 ```bash
 git add -p
 ```
