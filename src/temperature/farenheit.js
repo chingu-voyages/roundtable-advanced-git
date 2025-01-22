@@ -2,6 +2,7 @@ import { FarenheitFactor, TemperatureOffset } from "../constants.js";
 
 /**
  * Convert a temperature that is in Celcius to farenheit
+ * Jim helped me do this
  *
  * Formula used
  * farenheit = 32 + (9/5 * celcius)
