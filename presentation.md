@@ -150,9 +150,35 @@ git rebase -i <commitish>
 git commit --allow-empty -m "Initial commit"
 ```
 
+# Merging Strategies
+
+With git, we have the following merge strategies:
+
+- 3 way merge (the default way)
+- Rebase
+- Squash
+
+# 3 Way Merge
+
+when doing the 3 way merge, git will create a merge commit, where you will adding the changes to the base branch
+
+# Rebase
+
+When doing a rebase, git will just rebase the changes to the base branch marking the commit as the last commit of the base branch
+
+Open [Excalidraw](https://excalidraw.com/)
+
+# Squash
+
+When doing a squash, git will just squash the changes to the base branch
+
+Open [Excalidraw](https://excalidraw.com/)
+
 # Git Worktrees
 
 You can clone a remote repository into a **Git Worktree** configuration by running
+
+Open [Excalidraw](https://excalidraw.com/)
 
 ```bash
 git clone --bare https://github.com/chingu-voyages/roundtable-advanced-git.git
