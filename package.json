@@ -1,0 +1,24 @@
+{
+  "name": "temperature",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "start": "node src/index.js"
+  },
+  "type": "module",
+  "keywords": [
+    "chingu",
+    "roundtables",
+    "git",
+    "advanced",
+    "temperature"
+  ],
+  "author": "Andres Court",
+  "license": "GNU",
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "jest": "^29.7.0"
+  }
+}
