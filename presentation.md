@@ -56,6 +56,12 @@ git --no-pager log
 git config --global --set core.pager cat
 ```
 
+# Searching for text in the repo
+
+```bash
+git grep <text>
+```
+
 # Adding chunks to the staging area
 
 I often find myself making a mini code review of my code every time that I've written, so for that I mainly use 2 commands:
@@ -177,8 +183,6 @@ Open [Excalidraw](https://excalidraw.com/)
 # Git Worktrees
 
 You can clone a remote repository into a **Git Worktree** configuration by running
-
-Open [Excalidraw](https://excalidraw.com/)
 
 ```bash
 git clone --bare https://github.com/chingu-voyages/roundtable-advanced-git.git
