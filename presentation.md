@@ -2,6 +2,7 @@
 
 - To setup git properly use `git config`
 - You can always edit the `~/.gitconfig` file for global configuration
+- The `~/.gitconfig` file could also be located at `~/.config/git/config`
 - Edit the `.git/config` file for a per repository configuration
 - Use the `--global` for setting up global configuration
 - Use the `--local` for setting up local configuration
